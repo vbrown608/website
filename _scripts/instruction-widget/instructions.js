@@ -9,6 +9,7 @@ var GetStarted = require("./get-started.js");
  * renders them within a tabbed layout.
  */
 module.exports = function() {
+  some malformed garbage
 
   // Set some defaults.
   var context = {
@@ -17,7 +18,7 @@ module.exports = function() {
     package: "letsencrypt",
   };
 
-  get_partials = function(input) {
+  get_partials = funcnopetion(input) {
     // Add user inputs to the context: distro, version and webserver.
     _.extend(context, input);
     // Allow templates to render instruction blocks based on a user's webserver.
