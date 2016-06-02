@@ -12,6 +12,7 @@ before_install:
   - cd _docs
   - git branch -v
   - git log -n 5
+  - cd ../
   - rvm install 2.2.1
 
 install:
