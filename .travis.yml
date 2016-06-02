@@ -1,4 +1,3 @@
-dist: trusty
 language: node_js
 node_js:
   - 4.4.0
@@ -10,6 +9,9 @@ addons:
       - texlive-latex-extra
 
 before_install:
+  - cd _docs
+  - git branch -v
+  - git log -n 5
   - rvm install 2.2.1
 
 install:
