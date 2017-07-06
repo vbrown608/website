@@ -12,8 +12,9 @@ git config user.name "Travis CI"
 git config user.email "builds@travis-ci.com"
 
 git remote add upstream "git@github.com:vbrown608/certbot-builds.git"
-git pull upstream $TRAVIS_BRANCH
 git checkout -B $TRAVIS_BRANCH
+git fetch upstream $TRAVIS_BRANCH
+git reset upstream/$TRAVIS_BRANCH
 
 touch .
 
