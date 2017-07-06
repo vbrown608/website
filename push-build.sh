@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+chmod 600 deploy_key
+eval `ssh-agent -s`
+ssh-add deploy_key
+
 cd _site
 git init
 git config user.name "Travis CI"
