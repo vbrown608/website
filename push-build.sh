@@ -6,7 +6,7 @@ git init
 git config user.name "Travis CI"
 git config user.email "builds@travis-ci.com"
 
-git remote add upstream "https://$GIT_TOKEN@github.com/vbrown608/certbot-builds.git"
+git remote add upstream "git@github.com:vbrown608/certbot-builds.git"
 git fetch upstream
 git checkout -B $TRAVIS_BRANCH
 
