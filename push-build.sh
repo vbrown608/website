@@ -18,4 +18,4 @@ touch .
 
 git add -A
 git commit -m "Build website at ${rev}"
-git push -q upstream
+git push -q upstream $TRAVIS_BRANCH
