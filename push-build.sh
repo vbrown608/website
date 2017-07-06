@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 rev=$(git rev-parse --short HEAD)
 chmod 600 deploy_key
